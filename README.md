@@ -21,3 +21,18 @@ Programmer: AVRISP mkII
 
 ### Loading
 Follow plugin instruction to flash the board.
+
+
+
+calibrate sensor:  offset: x -41 y -15 (from 100)
+ender5
+ender5 new leadscrew
+bltouch
+DONT CHANGE DIRECTION
+
+add this line after G28 (home)
+G29 ;BLTOUCH mesh generation
+z-offset: -2.00
+https://th3dstudio.zendesk.com/hc/en-us/articles/360043727671
+https://th3dstudio.zendesk.com/hc/en-us/articles/360043727371
+
